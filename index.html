@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucian Marian</title>
+<style>
+:root{--bg:#FAFAF9;--text:#18181B;--accent:#2A78D6;--muted:#6b6b70;--line:#DEDDD8}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+nav{position:sticky;top:0;background:rgba(250,250,249,.95);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:1rem 8%}
+nav a{color:var(--text);text-decoration:none;margin-left:1.5rem;font-weight:500}
+nav a:hover{color:var(--accent)}
+.logo{font-weight:800;font-size:1.2rem;margin:0}
+header{padding:6rem 8% 4rem;max-width:900px}
+header h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1}
+header h1 span{color:var(--accent)}
+header p{font-size:1.2rem;color:var(--muted);margin:1rem 0 2rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.8rem 1.6rem;border-radius:8px;text-decoration:none;font-weight:600}
+section{padding:4rem 8%;border-top:1px solid var(--line)}
+h2{font-size:1.8rem;margin-bottom:1.5rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.5rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1.5rem;break-inside:avoid}
+.card h3{margin-bottom:.5rem}
+.card p{color:var(--muted)}
+.tags span{display:inline-block;background:#e8f0fb;color:var(--accent);padding:.3rem .8rem;border-radius:20px;margin:.25rem;font-size:.9rem}
+form{display:grid;gap:1rem;max-width:500px}
+input,textarea{padding:.8rem;border:1px solid var(--line);border-radius:8px;font:inherit}
+button{border:0;cursor:pointer;font:inherit}
+footer{text-align:center;padding:2rem;color:var(--muted);border-top:1px solid var(--line)}
+@media(max-width:600px){nav div{display:none}}
+</style>
+</head>
+<body>
+<nav><p class="logo">LM</p><div><a href="#about">About</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
+<header>
+<h1>Hi, I'm <span>Lucian Marian</span></h1>
+<p>Educator and creator. I build engaging courses and help students learn. (Edit this line to describe yourself.)</p>
+<a class="btn" href="#contact">Get in touch</a>
+</header>
+<section id="about"><h2>About me</h2>
+<p>Write a short bio here: who you are, what you do, and what you care about.</p></section>
+<section id="work"><h2>Projects</h2>
+<div class="grid">
+<div class="card"><h3>Project one</h3><p>Short description of the project and your role.</p></div>
+<div class="card"><h3>Project two</h3><p>Short description of the project and your role.</p></div>
+<div class="card"><h3>Project three</h3><p>Short description of the project and your role.</p></div>
+</div></section>
+<section id="skills"><h2>Skills</h2>
+<div class="tags"><span>Teaching</span><span>Course design</span><span>Google Classroom</span><span>Canvas</span><span>Communication</span></div></section>
+<section id="contact"><h2>Contact</h2>
+<form action="mailto:you@example.com" method="post" enctype="text/plain">
+<input name="name" placeholder="Your name" required>
+<input name="email" type="email" placeholder="Your email" required>
+<textarea name="message" rows="5" placeholder="Message" required></textarea>
+<button class="btn" type="submit">Send</button>
+</form></section>
+<footer>© <script>document.write(new Date().getFullYear())</script> Lucian Marian</footer>
+</body>
+</html>
